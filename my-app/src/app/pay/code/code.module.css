@@ -9,17 +9,19 @@
 
 .contect h1{
     margin:25px;
+    color:white;
     
 }
 
 .contect > p{
     width: 450px;
-    margin-bottom: 25px;
-    margin:0 25px;
+    margin:25px;
+    color:white;
 }
 
 .par{
     text-align: center;
+    color:white;
 }
 .contect form{
     width: 100%;
