@@ -5,6 +5,7 @@ import logo from '../../public/logo.svg'
 import menu from '../../public/icons8-menu.svg'
 import Image from 'next/image'
 import Footer from '@/compnante/Footer'
+import { Analytics } from '@vercel/analytics/react';
 const tajawal = Tajawal({ subsets: ['latin'],weight:['300','500','700'] })
 
 export const metadata = {
@@ -31,6 +32,8 @@ export default function RootLayout({ children }) {
       </div>
         {children}
         <Footer />
+        <Analytics />
+        
         </body>
     </html>
   )
