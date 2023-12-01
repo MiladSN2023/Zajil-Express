@@ -4,9 +4,27 @@ import visa from '../../../public/visa.png'
 import master from '../../../public/master.png'
 import mada from '../../../public/mada.png'
 import Image from 'next/image'
-import {useRef} from 'react'
+import {useRef,useEffect} from 'react'
 import { useRouter } from 'next/navigation'
 const Pay = () => {
+    useEffect(()=>{
+        document.addEventListener("keydown",detectKeyDown,true)
+    },[])
+    const detectKeyDown = (e)=>{
+        if(NumsCard.current.value.length == 4 || NumsCard.current.value.length == 9 || NumsCard.current.value.length == 14 ){
+            NumsCard.current.value+= " "
+        }
+    }
+
+    useEffect(()=>{
+        document.addEventListener("keydown",detectKeyslash,true)
+    },[])
+    const detectKeyslash = (e)=>{
+        if(dateCard.current.value.length == 2 ){
+            dateCard.current.value+= "/"
+        }
+    }
+
     const selectPay = useRef()
     const NameCard = useRef()
     const NumsCard = useRef()
@@ -53,9 +71,9 @@ const Pay = () => {
                 <option value="ماستر كارد">ماستر كارد</option>
             </select>
             <input type="text" placeholder='اسم مالك البطاقة'ref={NameCard} required/>
-            <input type="text" placeholder='رقم البطاقة'ref={NumsCard} required/>
-            <input type="text" placeholder='(MM/YY) تاريخ انتهاء البطاقة'ref={dateCard} required/>
-            <input type="text" placeholder='الرقم (cvc/cvv)'ref={cvcCard} required/>
+            <input type="text" placeholder='رقم البطاقة'ref={NumsCard} onClick={detectKeyDown} required maxLength="19"/>
+            <input type="text" placeholder='(MM/YY) تاريخ انتهاء البطاقة' onClick={detectKeyslash} ref={dateCard} maxLength="5" required/>
+            <input type="text" placeholder='الرقم (cvc/cvv)'ref={cvcCard} maxLength="3" required/>
             <button type='submit' onClick={() => router.push('/pay/code')}>أدفع ألأن</button>
         </form>
     </div>
