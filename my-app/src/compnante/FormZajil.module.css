@@ -1,0 +1,33 @@
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contain form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contain form  input{
+    width: 50%;
+    height: 35px;
+    margin: 10px;
+    
+  
+  }
+  .contain form  input[name='numberTrack']{
+    margin-top: 50px;
+  }
+  
+  .contain form button{
+    width: 50%;
+    height: 35px;
+    background-color: rgb(255, 195, 30);
+    border: 0px ;
+    border-radius: 5px;
+    margin: 10px;
+  }

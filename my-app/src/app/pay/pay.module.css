@@ -1,0 +1,47 @@
+.contect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.contect form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contect form select{
+    width: 50%;
+    height: 41px;
+    margin-top: 25px;
+    font-size: 16px;
+}
+.contect form select option{
+    width: 50%;
+    font-size: 16px;
+    height: 40px;
+}
+.contect form input{
+    margin-top: 10px;
+    font-size: 16px;
+    width: 50%;
+    height: 41px;
+}
+.contect form button{
+    width: 50%;
+    height: 40px;
+    background-color: rgb(255, 195, 30);
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 16px;
+
+}
+.contect div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
