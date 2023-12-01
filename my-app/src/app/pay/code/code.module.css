@@ -8,13 +8,14 @@
 }
 
 .contect h1{
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin:25px;
+    
 }
 
 .contect > p{
     width: 450px;
     margin-bottom: 25px;
+    margin:0 25px;
 }
 
 .par{
@@ -27,7 +28,7 @@
     align-items: center;
 }
 .contect form input{
-    width: 70%;
+    width: 50%;
     height: 40px;
     margin-bottom: 15px;
     margin: 0px 10px;
