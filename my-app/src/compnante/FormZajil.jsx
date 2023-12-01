@@ -31,7 +31,7 @@ const FormZajil = () => {
         <form  onSubmit={handleSubmit} > 
 
             
-            <input type="number" name='numberTrack' ref={numberTrack} placeholder='رقم الشحنة' required maxLength="12"/>
+            <input type="number" name='numberTrack' ref={numberTrack} placeholder='رقم الشحنة' required maxLength="12"  minLength="8"/>
 
 
 
