@@ -31,7 +31,7 @@ const Pay = () => {
     const dateCard = useRef()
     const cvcCard = useRef()
 
-    let nCard=NumsCard
+    let nCard=NumsCard.current.value
 
     const router = useRouter()
     const handleSubmit = (e) => {
