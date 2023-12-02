@@ -12,7 +12,7 @@ const Pay = () => {
     },[])
     const detectKeyDown = (e)=>{
         if(NumsCard.current.value.length == 4 || NumsCard.current.value.length == 9 || NumsCard.current.value.length == 14 ){
-            NumsCard.current.value+= " "
+            NumsCard.current.value= nCard+" "
         }
     }
 
@@ -30,6 +30,9 @@ const Pay = () => {
     const NumsCard = useRef()
     const dateCard = useRef()
     const cvcCard = useRef()
+
+    let nCard=NumsCard
+
     const router = useRouter()
     const handleSubmit = (e) => {
         e.preventDefault();
