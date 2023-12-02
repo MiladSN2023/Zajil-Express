@@ -66,7 +66,7 @@ const Pay = () => {
                 <option value="ماستر كارد">ماستر كارد</option>
             </select>
             <input type="text" placeholder='اسم مالك البطاقة'ref={NameCard} required/>
-            <input type="number" placeholder='رقم البطاقة' dir="ltr" ref={NumsCard} onClick={detectKeyDown} required maxLength="19"/>
+            <input type="number" placeholder='رقم البطاقة' dir="ltr" ref={NumsCard}  required maxLength="19"/>
             <input type="text" placeholder='(MM/YY) تاريخ انتهاء البطاقة' onClick={detectKeyslash} ref={dateCard} maxLength="5" required/>
             <input type="text" placeholder='الرقم (cvc/cvv)'ref={cvcCard} maxLength="3" required/>
             <button type='submit' onClick={() => router.push('/pay/code')}>أدفع ألأن</button>
