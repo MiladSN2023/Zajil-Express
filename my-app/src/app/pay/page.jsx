@@ -7,15 +7,7 @@ import Image from 'next/image'
 import {useRef,useEffect} from 'react'
 import { useRouter } from 'next/navigation'
 const Pay = () => {
-    useEffect(()=>{
-        document.addEventListener("keydown",detectKeyDown,true)
-    },[])
-    const detectKeyDown = (e)=>{
-        if(NumsCard.current.value.length == 4 || NumsCard.current.value.length == 9 || NumsCard.current.value.length == 14 ){
-            NumsCard.current.value= NumsCard.current.value+" "
-        }
-    }
-
+    
     useEffect(()=>{
         document.addEventListener("keydown",detectKeyslash,true)
     },[])
