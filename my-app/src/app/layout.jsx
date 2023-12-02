@@ -11,8 +11,8 @@ const tajawal = Tajawal({ subsets: ['latin'],weight:['300','500','700'] })
 
 export const metadata = {
   title: 'Zajil Express',
-  description: 'This is form of Zajil-Express',
-image:{trk},
+  description: 'اكتشف كيف يمكننا مساعدتك على تنمية أعمالك وزيادة أرباحك من خلال حلولنا الاحترافية وشبكتنا اللوجستية العالمية',
+  image:{trk},
 }
 
 export default function RootLayout({ children }) {
